@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         add.setOnClickListener(View.OnClickListener {
             var i= Intent(this, AddActivity::class.java).apply {
             }
-            MyApp.instance.startActivity(i)
+            startActivity(i)
         })
     }
 }

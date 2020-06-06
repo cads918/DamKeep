@@ -50,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
                     tokenInterceptor.token = it.token
                     var i= Intent(this, MainActivity::class.java).apply {
                     }
-                    MyApp.instance.startActivity(i)
+                    startActivity(i)
                     finish()
                     Log.i("respuesta",""+it)
                 })
@@ -59,7 +59,7 @@ class LoginActivity : AppCompatActivity() {
         register.setOnClickListener(View.OnClickListener {
             var i= Intent(this, RegisterActivity::class.java).apply {
             }
-            MyApp.instance.startActivity(i)
+            startActivity(i)
         })
     }
 }

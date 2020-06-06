@@ -74,7 +74,7 @@ class DetalleActivity : AppCompatActivity() {
             var i= Intent(this, EditActivity::class.java).apply {
                 putExtra("id", idNota)
             }
-            MyApp.instance.startActivity(i)
+            startActivity(i)
         })
 
     }
